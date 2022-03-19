@@ -1,0 +1,20 @@
+# GET /api/2202-FTB-PT-WEB-FT/posts
+curl http://strangers-things.herokuapp.com/api/2202-FTB-PT-WEB-FT/posts
+
+# POST /api/2202-FTB-PT-WEB-FT/users/register
+curl http://strangers-things.herokuapp.com/api/2202-FTB-PT-WEB-FT/users/register -X POST -H 'Content-Type:application/json' -d '{"user":{"username":"john","password":"123"}}'
+
+# POST /api/2202-FTB-PT-WEB-FT/users/login
+curl http://strangers-things.herokuapp.com/api/2202-FTB-PT-WEB-FT/users/login -X POST -H 'Content-Type:application/json' -d '{"user":{"username":"john","password":"123"}}'
+
+# GET /api/2202-FTB-PT-WEB-FT/users/me
+curl http://strangers-things.herokuapp.com/api/2202-FTB-PT-WEB-FT/users/me -H 'Content-Type:application/json' -H 'Authorization:Bearer '"$ST_TOKEN"''
+
+#POST/api/2202-FTB-PT-WEB-FT/posts
+//create new post
+curl http://strangers-things.herokuapp.com/api/2202-FTB-PT-WEB-FT/users/posts -H 'Content-Type:application/json' -H 'Authorization:Bearer "'$ST_TOKEN'"'
+-d '{"post":{"title":"my first new post","description":"this is my first new post","price":"$10.00}}'
+
+
+POSTIN
+curl http://strangers-things.herokuapp.com/api/2202-FTB-PT-WEB-FT/posts -X POST -H 'Content-Type:application/json' -H 'Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjMzYTc2YTljMDNlYjAwMTdiOTg4MGIiLCJ1c2VybmFtZSI6ImR1a2UiLCJpYXQiOjE2NDc1NjI1MjJ9.5u85aLRhjU9KyabM7lBjYxH3fjci2xQWycDDgi4D284 ' -d '{"post":{"title":"my first post","description":"this is my new post description","price":"$200.00", "willDeliver":true,"location":"San Jose,CA"}}'

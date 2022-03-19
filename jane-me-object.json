@@ -1,0 +1,125 @@
+{
+  "success": true,
+  "error": null,
+  "data": {
+    "posts": [
+      {
+        "location": "[On Request]",
+        "willDeliver": false,
+        "messages": [
+          {
+            "_id": "6230b4c2b8f8e00017e40ee0",
+            "content": "hey jane love your first post!",
+            "fromUser": {
+              "_id": "622b8075f3f2a80017099381",
+              "username": "john"
+            }
+          }
+        ],
+        "active": false,
+        "_id": "6230b2d5b8f8e00017e40edc",
+        "title": "my first new post",
+        "description": "this is my first new post",
+        "price": "$10.00",
+        "author": "622b9a89f3f2a80017099394",
+        "cohort": "622b62e9f3f2a80017099369",
+        "createdAt": "2022-03-15T15:37:57.783Z",
+        "updatedAt": "2022-03-15T16:29:00.500Z",
+        "__v": 0
+      },
+      {
+        "location": "[On Request]",
+        "willDeliver": false,
+        "messages": [
+          {
+            "_id": "6230b52ab8f8e00017e40ee3",
+            "content": "hey jane love your second post, even better!",
+            "fromUser": {
+              "_id": "622b8075f3f2a80017099381",
+              "username": "john"
+            }
+          }
+        ],
+        "active": false,
+        "_id": "6230b305b8f8e00017e40ede",
+        "title": "my second new post",
+        "description": "this is my second new post",
+        "price": "$20.00",
+        "author": "622b9a89f3f2a80017099394",
+        "cohort": "622b62e9f3f2a80017099369",
+        "createdAt": "2022-03-15T15:38:45.701Z",
+        "updatedAt": "2022-03-15T16:42:56.349Z",
+        "__v": 0
+      },
+      {
+        "location": "[On Request]",
+        "willDeliver": false,
+        "messages": [],
+        "active": true,
+        "_id": "6230cca6b8f8e00017e40f0a",
+        "title": "jane new post",
+        "description": "this is jane new post yay",
+        "price": "$10.00",
+        "author": "622b9a89f3f2a80017099394",
+        "cohort": "622b62e9f3f2a80017099369",
+        "createdAt": "2022-03-15T17:28:06.839Z",
+        "updatedAt": "2022-03-15T17:28:06.839Z",
+        "__v": 0
+      },
+      {
+        "location": "[On Request]",
+        "willDeliver": false,
+        "messages": [],
+        "active": true,
+        "_id": "6230ce67b8f8e00017e40f14",
+        "title": "new post from daniel",
+        "description": "this post was created on daniel's machine",
+        "price": "1 million",
+        "author": "622b9a89f3f2a80017099394",
+        "cohort": "622b62e9f3f2a80017099369",
+        "createdAt": "2022-03-15T17:35:35.339Z",
+        "updatedAt": "2022-03-15T17:35:35.339Z",
+        "__v": 0
+      },
+      {
+        "location": "[On Request]",
+        "willDeliver": false,
+        "messages": [],
+        "active": true,
+        "_id": "6230cf80b8f8e00017e40f18",
+        "title": "test alternate new post form",
+        "description": "testing an alt version of the new post component",
+        "price": "5000",
+        "author": "622b9a89f3f2a80017099394",
+        "cohort": "622b62e9f3f2a80017099369",
+        "createdAt": "2022-03-15T17:40:16.063Z",
+        "updatedAt": "2022-03-15T17:40:16.063Z",
+        "__v": 0
+      }
+    ],
+    "messages": [
+      {
+        "_id": "6230b4c2b8f8e00017e40ee0",
+        "content": "hey jane love your first post!",
+        "post": {
+          "_id": "6230b2d5b8f8e00017e40edc",
+          "title": "my first new post"
+        },
+        "fromUser": { "_id": "622b8075f3f2a80017099381", "username": "john" }
+      },
+      {
+        "_id": "6230b52ab8f8e00017e40ee3",
+        "content": "hey jane love your second post, even better!",
+        "post": {
+          "_id": "6230b305b8f8e00017e40ede",
+          "title": "my second new post"
+        },
+        "fromUser": { "_id": "622b8075f3f2a80017099381", "username": "john" }
+      }
+    ],
+    "_id": "622b9a89f3f2a80017099394",
+    "username": "jane",
+    "cohort": "622b62e9f3f2a80017099369",
+    "__v": 0
+  }
+}

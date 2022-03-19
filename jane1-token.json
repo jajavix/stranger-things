@@ -1,0 +1,8 @@
+{
+  "success": true,
+  "error": null,
+  "data": {
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjMzYWY0ODUzZjYxNjAwMTczNDc0ZWIiLCJ1c2VybmFtZSI6ImphbmUxIiwiaWF0IjoxNjQ3NTY2NDk1fQ.1KnSnpXcqTgytGZF28xNUOMxXg1gDMg3Q6yk1wr2SB0",
+    "message": "Thanks for logging in to our service."
+  }
+}

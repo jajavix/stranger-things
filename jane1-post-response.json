@@ -1,0 +1,22 @@
+{
+  "success": true,
+  "error": null,
+  "data": {
+    "post": {
+      "location": "San Francisco,CA",
+      "willDeliver": true,
+      "messages": [],
+      "active": true,
+      "_id": "6233e17e53f6160017347523",
+      "title": "my first post, new guitar",
+      "description": "this is a new post about a new guitar",
+      "price": "$350.00",
+      "author": { "_id": "6233af4853f61600173474eb", "username": "jane1" },
+      "cohort": "622b62e9f3f2a80017099369",
+      "createdAt": "2022-03-18T01:33:50.566Z",
+      "updatedAt": "2022-03-18T01:33:50.566Z",
+      "__v": 0,
+      "isAuthor": true
+    }
+  }
+}

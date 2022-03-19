@@ -1,0 +1,167 @@
+{
+  "success": true,
+  "error": null,
+  "data": {
+    "posts": [
+      {
+        "location": "[On Request]",
+        "willDeliver": false,
+        "messages": [],
+        "active": true,
+        "_id": "622b62e9f3f2a8001709936d",
+        "author": { "_id": "622b62e9f3f2a8001709936a", "username": "joe1234" },
+        "cohort": "622b62e9f3f2a80017099369",
+        "title": "Practically new Stradivarius",
+        "description": "I've really only used this three or four times.  I thought it would be a good purchase, shows what I know.",
+        "price": "$14.3 million",
+        "createdAt": "2022-03-11T14:55:37.644Z",
+        "updatedAt": "2022-03-11T14:55:37.696Z",
+        "__v": 0,
+        "isAuthor": false
+      },
+      {
+        "location": "Ames, IA",
+        "willDeliver": true,
+        "messages": [],
+        "active": true,
+        "_id": "622b62e9f3f2a8001709936f",
+        "author": {
+          "_id": "622b62e9f3f2a8001709936c",
+          "username": "caesar1234"
+        },
+        "cohort": "622b62e9f3f2a80017099369",
+        "title": "NordicTrack Freestrider Elliptical Trainer",
+        "description": "To be honest, it is more amazing than my resolve.",
+        "price": "$1400, OBO",
+        "createdAt": "2022-03-11T14:55:37.644Z",
+        "updatedAt": "2022-03-11T14:55:37.710Z ",
+        "__v": 0,
+        "isAuthor": false
+      },
+      {
+        "location": "[On Request]",
+        "willDeliver": true,
+        "messages": [],
+        "active": true,
+        "_id": "622b62e9f3f2a8001709936e",
+        "author": { "_id": "622b62e9f3f2a8001709936b", "username": "jane1234" },
+        "cohort": "622b62e9f3f2a80017099369",
+        "title": "Golden Retriever puppies",
+        "description": "Not looking for any money, just want to find a good home for these four beautiful pups.",
+        "price": "free",
+        "createdAt": "2022-03-11T14:55:37.644Z",
+        "updatedAt ": "2022-03-11T14:55:37.703Z",
+        "__v": 0,
+        "isAuthor": false
+      },
+      {
+        "location": "Chicago, IL",
+        "willDeliver": true,
+        "messages": [],
+        "active": true,
+        "_id": "622ed5187b4f410017da16a1",
+        "title": "my new post",
+        "description": "this is my new post description",
+        "price": "$500.00",
+        "author": {
+          "_id": "622ecd877b4f410017da169f",
+          "username": "johnny apple seed"
+        },
+        "cohort": "622b62e9f3f2a80017099369",
+        "createdAt": "2022-03-14T05:39:36.823Z",
+        "updatedAt": "2022-03-14T16:05:33.842Z",
+        "_ _v": 0,
+        "isAuthor": false
+      },
+      {
+        "location": "[On Request]",
+        "willDeliver": false,
+        "messages": [],
+        "active": true,
+        "_id": "622fd67d7b4f410017da1811",
+        "title": "Toy Train",
+        "description": "Red plastic train that you can ride on",
+        "price": "$100.00",
+        "author": { "_id": "622fd64a7b4f410017da180f", "username": "megan" },
+        "cohort": "622b62e9f3f2a80017099369",
+        "createdAt": "2022-03-14T23:57:49.715Z",
+        "updatedAt": "2022-03-14T23:57:49.715Z",
+        "__v": 0,
+        "isAuthor": false
+      },
+      {
+        "location": "[On Request]",
+        "willDeliver": false,
+        "messages": [],
+        "active": true,
+        "_id": "6230cca6b8f8e00017                e40f0a",
+        "title": "jane new post",
+        "description": "this is jane new post yay",
+        "price": "$10.0                0",
+        "author": { "_id": "622b9a89f3f2a80017099394", "username": "jane" },
+        "cohort": "622b62e9f3f2a                80017099369",
+        "createdAt": "2022-03-15T17:28:06.839Z",
+        "updatedAt": "2022-03-15T17:28:06.839                Z",
+        "__v": 0,
+        "isAuthor": false
+      },
+      {
+        "location": "[On Request]",
+        "willDeliver": false,
+        "messages": [],
+        "active": true,
+        "_id": "6230ce67b8f8e00017e40f14",
+        "title": "new post from daniel",
+        "descrip                tion": "this post was created on daniel's machine",
+        "price": "1 million",
+        "author": {
+          "_id": "6                22b9a89f3f2a80017099394",
+          "username": "jane"
+        },
+        "cohort": "622b62e9f3f2a80017099369",
+        "created                At": "2022-03-15T17:35:35.339Z",
+        "updatedAt": "2022-03-15T17:35:35.339Z",
+        "__v": 0,
+        "isAuthor": false
+      },
+      {
+        "location": "[On Request]",
+        "willDeliver": false,
+        "messages": [],
+        "active": true,
+        "_id": "6230cf80b8f8e00017e40f18",
+        "title": "test alternate new post form",
+        "description": "testin                g an alt version of the new post component",
+        "price": "5000",
+        "author": {
+          "_id": "622b9a89f3f2                a80017099394",
+          "username": "jane"
+        },
+        "cohort": "622b62e9f3f2a80017099369",
+        "createdAt": "2022-0                3-15T17:40:16.063Z",
+        "updatedAt": "2022-03-15T17:40:16.063Z",
+        "__v": 0,
+        "isAuthor": false
+      },
+      {
+        "l                ocation": "",
+        "willDeliver": false,
+        "messages": [],
+        "active": true,
+        "_id": "6230dcb0b8f8e00017e40                f5a",
+        "title": "An Egg In This Trying Time",
+        "description": "Would you like it?",
+        "price": "pr                iceless",
+        "author": {
+          "_id": "622fc1637b4f410017da17c6",
+          "username": "johnnyappleseed"
+        },
+        "cohor                t": "622b62e9f3f2a80017099369",
+        "createdAt": "2022-03-15T18:36:32.990Z",
+        "updatedAt": "2022-0                3-15T18:36:32.990Z",
+        "__v": 0,
+        "isAuthor": false
+      }
+    ]
+  }
+}
