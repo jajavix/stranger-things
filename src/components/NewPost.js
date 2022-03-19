@@ -3,14 +3,20 @@ import { useLocation } from "react-router-dom";
 import { useHistory } from "react-router-dom";
 import { useAuth } from "../custom-hooks";
 
-const NewPost = () => {
+export default function NewPost() {
+  //token
+  const { token } = useAuth;
+  const [form, setForm] = useState({
+    title: "",
+    description: "",
+    price: "",
+  });
+
   const { search, panthname } = useLocation();
   console.log(search);
 
   //sent user to this
   const history = useHistory();
-  //token
-  const { token } = useAuth();
 
   function handleChange(e) {
     setForm({ ...form, [e.target.name]: e.target.value });
@@ -55,6 +61,4 @@ const NewPost = () => {
       <h1>Add New Post</h1>
     </section>
   );
-};
-
-export default NewPost;
+}
