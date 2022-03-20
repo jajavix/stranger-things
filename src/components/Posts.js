@@ -26,7 +26,7 @@ export default function Posts() {
     async function fetchPosts() {
       try {
         const response = await fetch(
-          `http://strangers-things.herokuapp.com/api/2202-FTB-PT-WEB-FT/posts`
+          `https://strangers-things.herokuapp.com/api/2202-FTB-PT-WEB-FT/posts`
         );
         //unpacked the response stream
         const { success, data } = await response.json();

@@ -27,7 +27,7 @@ export default function NewPost() {
     try {
       //fetch to get a response whether our POST action was successful
       const response = await fetch(
-        "http://strangers-things.herokuapp.com/api/2202-FTB-PT-WEB-FT/posts",
+        "https://strangers-things.herokuapp.com/api/2202-FTB-PT-WEB-FT/posts",
         {
           method: "POST",
           headers: {

@@ -10,7 +10,7 @@ export default function Me() {
     async function fetchMe() {
       try {
         const response = await fetch(
-          `http://strangers-things.herokuapp.com/api/2202-FTB-PT-WEB-FT/users/me`,
+          `https://strangers-things.herokuapp.com/api/2202-FTB-PT-WEB-FT/users/me`,
           {
             headers: {
               Authorization: `Bearer ${token}`,
