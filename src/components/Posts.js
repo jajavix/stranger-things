@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useLocation, useHistory } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export default function Posts() {
   //posts need to manage the post data coming from our stranger things app
@@ -89,6 +90,9 @@ export default function Posts() {
               <p>Post Title: {post.description} </p>
               <p>Price: {post.price} </p>
               <p>Location: {post.location} </p>
+              <Link to="posts/new">
+                <button>Edit Post</button>
+              </Link>
             </article>
           ))}
       </div>

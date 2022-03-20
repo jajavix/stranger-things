@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import { useLocation } from "react-router-dom";
-import { useHistory } from "react-router-dom";
+import { useHistory, useLocation } from "react-router-dom";
 import { useAuth } from "../custom-hooks";
 
 export default function NewPost() {
@@ -12,7 +11,7 @@ export default function NewPost() {
     price: "",
   });
 
-  const { search, panthname } = useLocation();
+  const { search } = useLocation();
   console.log(search);
 
   //sent user to this
@@ -24,7 +23,6 @@ export default function NewPost() {
 
   async function handleSubmit(e) {
     e.preventDefault();
-    console.go(form, token);
 
     try {
       //fetch to get a response whether our POST action was successful
@@ -45,7 +43,7 @@ export default function NewPost() {
 
       //we leverage the history api to shunt our user elsewhere after successful POS action
       if (success) {
-        history.push("/posts");
+        history.push("/posts/new");
       } else {
         throw new Error("error creating post");
       }
@@ -57,8 +55,38 @@ export default function NewPost() {
   }
 
   return (
-    <section>
-      <h1>Add New Post</h1>
-    </section>
+    <form onSubmit={handleSubmit}>
+      <div>
+        <label>{NewPost} Title</label>
+        <input
+          type="text"
+          id="title"
+          value={form.title}
+          onChange={handleChange}
+        />
+        <label>{NewPost} Price</label>
+        <input
+          type="text"
+          id="price"
+          value={form.price}
+          onChange={handleChange}
+        />
+        <label>{NewPost} Description</label>
+        <input
+          type="text"
+          id="description"
+          value={form.description}
+          onChange={handleChange}
+        />
+        <label>{NewPost} Location</label>
+        <input
+          type="text"
+          id="location"
+          value={form.location}
+          onChange={handleChange}
+        />
+        <button>Submit</button>
+      </div>
+    </form>
   );
 }

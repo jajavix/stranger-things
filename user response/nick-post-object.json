@@ -1,0 +1,22 @@
+{
+  "success": true,
+  "error": null,
+  "data": {
+    "post": {
+      "location": "Astoria,CA",
+      "willDeliver": true,
+      "messages": [],
+      "active": true,
+      "_id": "6236aeb28d64d50017505271",
+      "title": "Bike",
+      "description": "brand new, never use",
+      "price": "$100.00",
+      "author": { "_id": "6236a98c8d64d5001750526d", "username": "nick" },
+      "cohort": "622b62e9f3f2a80017099369",
+      "createdAt": "2022-03-20T04:33:54.300Z",
+      "updatedAt": "2022-03-20T04:33:54.300Z",
+      "__v": 0,
+      "isAuthor": true
+    }
+  }
+}

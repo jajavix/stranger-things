@@ -3,7 +3,7 @@ import { useAuth } from "../custom-hooks";
 import { NavLink } from "react-router-dom";
 
 const loggedInLinks = [
-  { id: 1, to: "/posts/new", name: "+ New Post" },
+  { id: 1, to: "/posts/new", name: "AddNewPost" },
   { id: 2, to: "/posts", name: "Posts" },
   { id: 3, to: "/me", name: "Profile" },
 ];
@@ -18,7 +18,6 @@ const loggedOutLinks = [
 export default function Nav() {
   const { isLoggedIn, logout } = useAuth();
   const navLinks = isLoggedIn ? loggedInLinks : loggedOutLinks;
-
   return (
     <nav>
       {navLinks.map(({ id, to, name }) => (

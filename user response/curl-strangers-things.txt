@@ -17,4 +17,8 @@ curl http://strangers-things.herokuapp.com/api/2202-FTB-PT-WEB-FT/users/posts -H
 
 
 POSTIN
-curl http://strangers-things.herokuapp.com/api/2202-FTB-PT-WEB-FT/posts -X POST -H 'Content-Type:application/json' -H 'Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjMzYTc2YTljMDNlYjAwMTdiOTg4MGIiLCJ1c2VybmFtZSI6ImR1a2UiLCJpYXQiOjE2NDc1NjI1MjJ9.5u85aLRhjU9KyabM7lBjYxH3fjci2xQWycDDgi4D284 ' -d '{"post":{"title":"my first post","description":"this is my new post description","price":"$200.00", "willDeliver":true,"location":"San Jose,CA"}}'
+curl http://strangers-things.herokuapp.com/api/2202-FTB-PT-WEB-FT/posts -X POST -H 'Content-Type:application/json' -H 'Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjM2YTk4YzhkNjRkNTAwMTc1pY2siLCJpYXQiOjE2NDc3NDk1NjF9.igx7aYrV2fYRQMoQSlHPlxUxWRIkaAPpGvOPMLtvf6w ' -d '{"post":{"title":"Bike","description":"brand new, never use","price":"$100.00", "willDeliver":true,"location":"Astoria,CA"}}'
+
+
+
+curl http://strangers-things.herokuapp.com/api/2202-FTB-PT-WEB-FT/users/me -H 'Content-Type:application/json' -H 'Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjMzYTc2YTljMDNlYjAwMTdiOTg4MGIiLCJ1c2VybmFtZSI6ImR1a2UiLCJpYXQiOjE2NDc1NjI1MjJ9.5u85aLRhjU9KyabM7lBjYxH3fjci2xQWycDDgi4D284'

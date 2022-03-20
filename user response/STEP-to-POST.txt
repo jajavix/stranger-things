@@ -1,0 +1,28 @@
+ Step to create POST
+1. curl http://strangers-things.herokuapp.com/api/2202-FTB-PT-WEB-FT/users/login -X POST -H 'Content-Type:application/json' -d '{"user":{"username":"jane","password":"123"}}'
+Store Token!
+2. check token and cut to export!
+3. export ST_TOKEN
+4.$ST_TOKEN
+
+user: nick
+password: 123
+
+curl http://strangers-things.herokuapp.com/api/2202-FTB-PT-WEB-FT/users/login -X POST -H 'Content-Type:application/json' -d '{"user":{"username":"nick","password":"123"}}'
+
+token: 
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjM2YTk4YzhkNjRkNTAwMTc1MDUyNmQiLCJ1c2VybmFtZSI6Im5pY2siLCJpYXQiOjE2NDc3NDk1NjF9.igx7aYrV2fYRQMoQSlHPlxUxWRIkaAPpGvOPMLtvf6w"
+
+check token
+$NICK_ST_TOKEN
+
+ curl http://strangers-things.herokuapp.com/api/2202-FTB-PT-WEB-FT/users/posts -X POST -H 'Content-Type:application/json' -H 'Authorization:Bearer "'$NICK_ST_TOKEN'"'
+-d '{"post":{"location": "Astoria,NY", "title":"Bike","description":"Brand New bike, not use","price":"$30.00}}'
+
+curl http://strangers-things.herokuapp.com/api/2202-FTB-PT-WEB-FT/posts/6233d4ac53f616001734750b
+ -X POST -H 'Content-Type:application/json' -H 'Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjM2YTk4YzhkNjRkNTAwMTc1MDUyNmQiLCJ1c2VybmFtZSI6Im5pY2siLCJpYXQiOjE2NDc3NTA3NzJ9.R-I2BFuDb3yMa6d7hZ6j_GiKKeUsYpBlbo4uG4e6mpI' -d ‘{"message":{“content":"Hi Duke, I am very interested in the post!”}}’
+
+curl http://strangers-things.herokuapp.com/api/2202-FTB-PT-WEB-FT/posts/6233d4ac53f616001734750b/messages -X POST -H  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjM2YTk4YzhkNjRkNTAwMTc1MDUyNmQiLCJ1c2VybmFtZSI6Im5pY2siLCJpYXQiOjE2NDc3NTA3NzJ9.R-I2BFuDb3yMa6d7hZ6j_GiKKeUsYpBlbo4uG4e6mpI'-d '{"message":{"content":"Hi Duke, Im interested in your post"}}'
+{"success":false,"error":{"name":"InvalidToken","message":"Invalid token, please sign up or log in"},"data":null}curl: (3) nested brace in URL position 12:
+{"message":{"content":"Hi Duke, Im interested in your post"}}
+ curl http://strangers-things.herokuapp.com/api/2202-FTB-PT-WEB-FT/posts/6233d4ac53f616001734750b/messages -X POST -H 'Content-Type:application/json' -H 'Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjM2YTk4YzhkNjRkNTAwMTc1MDUyNmQiLCJ1c2VybmFtZSI6Im5pY2siLCJpYXQiOjE2NDc3NTM0MTd9.1qpKXN2bi8BAdI34Ub_l_ohjj4UMmRdi54ZRQxF_jAg' -d '{"message":{"content":"Hi Duke, Im interested in your post"}}'

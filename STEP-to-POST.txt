@@ -1,7 +1,0 @@
- Step to create POST
-1. curl http://strangers-things.herokuapp.com/api/2202-FTB-PT-WEB-FT/users/login -X POST -H 'Content-Type:application/json' -d '{"user":{"username":"jane","password":"123"}}'
-Store Token!
-2. check token and cut to export!
-3. export ST_TOKEN
-4.$ST_TOKEN
-
