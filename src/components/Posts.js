@@ -71,7 +71,6 @@ export default function Posts() {
       <hr></hr>
       <div className="post-card">
         <h2>Search</h2>
-
         <input
           type="text"
           placeholder="enter something"
@@ -93,6 +92,7 @@ export default function Posts() {
               <p>Location: {post.location} </p>
               <Link to="posts/new">
                 <button>Edit Post</button>
+                <button>Message</button>
               </Link>
             </div>
           ))}

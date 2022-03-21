@@ -84,6 +84,6 @@ button {
   padding: 5%;
 }
 
-.box {
-  width: 45rem;
+#search {
+  width: 100%;
 }

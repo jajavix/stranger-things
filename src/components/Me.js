@@ -103,6 +103,7 @@ export default function Me() {
             <article key={msg._id}>
               <h4>Post ID: {msg.post._id}</h4>
               <p>Post Title: {msg.post.title} </p>
+              <button>View Message</button>
             </article>
           ))}
       </div>
