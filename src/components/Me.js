@@ -91,10 +91,13 @@ export default function Me() {
   return (
     <section>
       <div>
-        <h1>Welcome,{username}</h1>
+        <h1>
+          Welcome,
+          {username}
+        </h1>
       </div>
       <h2>My Messages</h2>
-      <div>
+      <div className="post-card">
         {messages &&
           messages.map((msg) => (
             <article key={msg._id}>
@@ -105,7 +108,7 @@ export default function Me() {
       </div>
       <h2>My Posts</h2>
       <h3>Active Posts</h3>
-      <div>
+      <div className="post-card">
         {activePosts.length
           ? activePosts.map((post) => (
               <article key={post._id}>
@@ -121,7 +124,7 @@ export default function Me() {
           : "no active posts"}
       </div>
       <h3>Inactive Posts</h3>
-      <div>
+      <div className="post-card">
         {inactivePosts.length
           ? inactivePosts.map((post) => (
               <article key={post._id}>

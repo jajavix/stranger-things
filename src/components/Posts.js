@@ -69,8 +69,9 @@ export default function Posts() {
         <h1>Welcome to Stranger Things</h1>
       </div>
       <hr></hr>
-      <div>
+      <div className="post-card">
         <h2>Search</h2>
+
         <input
           type="text"
           placeholder="enter something"
@@ -82,10 +83,10 @@ export default function Posts() {
         />
       </div>
       <hr></hr>
-      <div>
+      <div className="'post-main-container">
         {posts &&
           filterPosts.map((post) => (
-            <article key={post._id}>
+            <div key={post._id} className="post-card">
               <h4>Post ID: {post.title}</h4>
               <p>Post Title: {post.description} </p>
               <p>Price: {post.price} </p>
@@ -93,7 +94,7 @@ export default function Posts() {
               <Link to="posts/new">
                 <button>Edit Post</button>
               </Link>
-            </article>
+            </div>
           ))}
       </div>
     </section>
