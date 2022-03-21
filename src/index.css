@@ -1,6 +1,9 @@
 body {
   background-color: white;
   background-image: url("https://upload.wikimedia.org/wikipedia/commons/c/c0/Cartoonists_shop_logo.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
