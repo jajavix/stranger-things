@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useAuth } from "../custom-hooks";
+import { NavLink } from "react-router-dom";
 
 export default function Me() {
   const { token } = useAuth();
@@ -116,7 +117,13 @@ export default function Me() {
                 <h4>Post ID: {post.title}</h4>
                 <p>Post Title: {post.description} </p>
                 <p>Price: {post.price} </p>
-
+                <NavLink
+                  key="6"
+                  to={`/editpost/?title=${post.title}&description=${post.description}&price=${post.price}&location=${post.location}&willDeliver=${post.willDeliver}&post_id=${post._id}`}
+                  className="editButton"
+                >
+                  Edit
+                </NavLink>
                 <button onClick={() => deletePost(post._id)}>
                   delete this post
                 </button>

@@ -3,7 +3,7 @@ import { useAuth } from "../custom-hooks";
 import { NavLink } from "react-router-dom";
 
 const loggedInLinks = [
-  { id: 1, to: "/posts/new", name: "AddNewPost" },
+  { id: 1, to: "/addpost", name: "AddPost" },
   { id: 2, to: "/posts", name: "Posts" },
   { id: 3, to: "/me", name: "Profile" },
 ];

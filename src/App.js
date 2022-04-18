@@ -2,7 +2,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { useAuth } from "./custom-hooks";
-import { LoginOrRegister, Posts, Nav, NewPost, Me } from "./components";
+import { LoginOrRegister, Posts, AddPost, Nav, Me } from "./components";
 
 function App() {
   const { isLoggedIn } = useAuth();
@@ -16,7 +16,7 @@ function App() {
           <>
             {/* anything that requires an authorization header is the fetch, any create, update, delete action */}
             <Route exact path="/posts" component={Posts} />
-            <Route path="/posts/new" component={NewPost} />
+            <Route exact path="/addpost" component={AddPost} />
             <Route path="/me" component={Me} />
           </>
         )}

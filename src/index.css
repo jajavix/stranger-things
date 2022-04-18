@@ -65,10 +65,12 @@ form {
   justify-content: space-around;
 }
 
-button {
+.button {
   align-content: space-around;
   font-size: 20px;
   font-weight: bold;
+  border-radius: 10px;
+  width: 250px;
 }
 
 .posts-main-container {
@@ -83,7 +85,22 @@ button {
   margin: 1rem 1rem;
   padding: 5%;
 }
+.createButton {
+  border: 1px solid black;
+  font-size: 25px;
+  padding-left: 5%;
+  background-color: lightcyan;
+  width: 250px;
+  border-radius: 10px;
+}
 
-#search {
-  width: 100%;
+.editButton {
+  border: 1px solid black;
+  font-size: 25px;
+  font-weight: bold;
+  padding-left: 5%;
+  background-color: lightcyan;
+  height: 5%;
+  width: 15%;
+  border-radius: 10px;
 }

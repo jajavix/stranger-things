@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { useLocation, useHistory } from "react-router-dom";
+import { useAuth } from "../custom-hooks";
 import { Link } from "react-router-dom";
 
 export default function Posts() {
+  const { token } = useAuth();
   //posts need to manage the post data coming from our stranger things app
   //so we need two pieces of info
   //a way of holding onto state: useState
@@ -69,8 +71,9 @@ export default function Posts() {
         <h1>Welcome to Stranger Things</h1>
       </div>
       <hr></hr>
+
       <div className="post-card">
-        <h2>Search</h2>
+        <h2>Search Post</h2>
         <input
           type="text"
           placeholder="enter something"
@@ -80,6 +83,11 @@ export default function Posts() {
             )
           }
         />
+        <div className="createButton">
+          {posts.isAuthor && token ? (
+            <Link to="/addpost">CreatePost</Link>
+          ) : null}
+        </div>
       </div>
       <hr></hr>
       <div className="'post-main-container">
@@ -90,10 +98,17 @@ export default function Posts() {
               <p>Post Title: {post.description} </p>
               <p>Price: {post.price} </p>
               <p>Location: {post.location} </p>
-              <Link to="posts/new">
-                <button>Edit Post</button>
-                <button>Message</button>
-              </Link>
+              <p>
+                {!post.isAuthor && token ? (
+                  <Link
+                    key="7"
+                    to={`/sendmessage/?authorUsername=${post.author.username}&post_id=${post._id}`}
+                    className="createButton"
+                  >
+                    Message!
+                  </Link>
+                ) : null}
+              </p>
             </div>
           ))}
       </div>
